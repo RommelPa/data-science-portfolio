@@ -4,12 +4,12 @@
 
 This repository is the central hub for my data science portfolio.
 
-The portfolio demonstrates reproducible data analysis, machine learning, business reporting, dashboard development, model serving, and containerized API delivery.
+The portfolio demonstrates reproducible data analysis, machine learning, business reporting, dashboard development, model serving, containerized API delivery, and continuous integration.
 
 The goal is not to show isolated notebooks. The goal is to show the full data-product workflow:
 
 ```text
-business question → data audit → preprocessing → modeling → evaluation → interpretation → reporting → dashboard/API delivery
+business question → data audit → preprocessing → modeling → evaluation → interpretation → reporting → dashboard/API delivery → automation
 ```
 
 ---
@@ -28,6 +28,7 @@ My portfolio covers:
 - executive dashboard development,
 - machine learning APIs,
 - Docker-based service packaging,
+- GitHub Actions CI,
 - Git/GitHub version control,
 - reproducible local workflows.
 
@@ -43,7 +44,7 @@ My portfolio covers:
 | 4 | Sales Forecasting Time Series | Forecasting | Daily sales forecasting with chronological validation | [GitHub](https://github.com/RommelPa/sales-forecasting-time-series) |
 | 5 | Sentiment Analysis NLP | Natural Language Processing | IMDB sentiment classifier with TF-IDF and error analysis | [GitHub](https://github.com/RommelPa/sentiment-analysis-nlp) |
 | 6 | Retail Executive Dashboard | Business Intelligence / Data App | Streamlit BI-style executive dashboard | [GitHub](https://github.com/RommelPa/retail-executive-dashboard) |
-| 7 | Customer Churn Prediction API | ML Engineering / API | FastAPI churn prediction service with Docker | [GitHub](https://github.com/RommelPa/customer-churn-prediction-api) |
+| 7 | Customer Churn Prediction API | ML Engineering / API | FastAPI churn prediction service with Docker and CI | [GitHub](https://github.com/RommelPa/customer-churn-prediction-api) |
 
 ---
 
@@ -66,19 +67,21 @@ It includes:
 - automated tests with pytest,
 - Dockerfile and `.dockerignore`,
 - Docker image validation,
+- GitHub Actions CI workflow,
+- CI-safe API contract tests with mocked model responses,
 - MIT license,
-- version tags `v1.0.0` and `v1.1.0`.
+- version tags `v1.0.0`, `v1.1.0`, and `v1.2.0`.
 
 **Why it matters**
 
 This project shows the transition from model development to model serving.
 
-It demonstrates that a model is not useful only as a notebook artifact. It must be packaged, validated, documented, and exposed through a usable interface.
+It demonstrates that a model is not useful only as a notebook artifact. It must be packaged, validated, documented, tested, containerized, and automatically checked through CI.
 
 **Main technologies**
 
 ```text
-Python, FastAPI, Pydantic, scikit-learn, pandas, joblib, pytest, Uvicorn, Docker
+Python, FastAPI, Pydantic, scikit-learn, pandas, joblib, pytest, Uvicorn, Docker, GitHub Actions
 ```
 
 ---
@@ -239,6 +242,7 @@ This project is the foundation for later retail business analytics and dashboard
 | API Development | Customer Churn Prediction API |
 | Model Serving | Customer Churn Prediction API |
 | Docker | Customer Churn Prediction API |
+| Continuous Integration | Customer Churn Prediction API |
 | Automated Testing | Customer Churn Prediction API |
 | Business Reporting | Retail Executive Dashboard, Churn, Forecasting, Regression |
 | Model Interpretation | Regression, Churn, NLP |
@@ -285,6 +289,7 @@ Uvicorn
 pytest
 httpx
 Docker
+GitHub Actions
 Git
 GitHub
 ```
@@ -296,7 +301,7 @@ GitHub
 If you are reviewing this portfolio, use this order:
 
 1. **Customer Churn Prediction API**  
-   Best technical project. Shows model serving, validation, tests, and Docker.
+   Best technical project. Shows model serving, validation, tests, Docker, and CI.
 
 2. **Retail Executive Dashboard**  
    Best visual/business-facing project. Shows dashboard design and executive reporting.
@@ -322,12 +327,12 @@ If you are reviewing this portfolio, use this order:
 
 This portfolio is designed to show progression.
 
-It starts with exploratory analysis and supervised modeling. It then moves into forecasting and NLP. It continues with an executive dashboard and finishes with an API that serves a trained model through FastAPI and Docker.
+It starts with exploratory analysis and supervised modeling. It then moves into forecasting and NLP. It continues with an executive dashboard and finishes with an API that serves a trained model through FastAPI, Docker, tests, and CI.
 
 The key message is:
 
 ```text
-I can analyze data, build models, explain results, create decision-support dashboards, and serve machine learning predictions through an API.
+I can analyze data, build models, explain results, create decision-support dashboards, and serve machine learning predictions through tested, containerized, CI-validated APIs.
 ```
 
 ---
@@ -342,7 +347,7 @@ I can analyze data, build models, explain results, create decision-support dashb
 | Sales Forecasting Time Series | Complete, tagged `v1.0.0` |
 | Sentiment Analysis NLP | Complete, tagged `v1.0.0` |
 | Retail Executive Dashboard | Complete, tagged `v1.0.0` |
-| Customer Churn Prediction API | Complete, tagged `v1.1.0` |
+| Customer Churn Prediction API | Complete, tagged `v1.2.0` |
 
 ---
 
@@ -353,8 +358,8 @@ The portfolio is already broad enough. The next improvements should focus on pol
 Recommended next steps:
 
 1. Deploy the Retail Executive Dashboard.
-2. Add GitHub Actions CI to the Customer Churn Prediction API.
-3. Deploy the Customer Churn Prediction API.
+2. Deploy the Customer Churn Prediction API.
+3. Add Docker image publishing workflow for the API.
 4. Add screenshots or demo GIFs to this hub.
 5. Add direct demo links when deployments are available.
 6. Add a short professional profile section to LinkedIn using this portfolio narrative.
@@ -365,7 +370,7 @@ Recommended next steps:
 
 Este repositorio centraliza mi portafolio de ciencia de datos.
 
-El portafolio demuestra proyectos reproducibles de análisis exploratorio, regresión, clasificación, forecasting, NLP, dashboard ejecutivo, API de machine learning y Docker.
+El portafolio demuestra proyectos reproducibles de análisis exploratorio, regresión, clasificación, forecasting, NLP, dashboard ejecutivo, API de machine learning, Docker y CI con GitHub Actions.
 
 La narrativa principal es:
 
@@ -376,7 +381,7 @@ Construyo soluciones de datos reproducibles: desde análisis y modelado hasta da
 Los proyectos muestran el flujo completo de trabajo:
 
 ```text
-pregunta de negocio → auditoría de datos → limpieza → modelado → evaluación → interpretación → documentación → entrega como dashboard o API
+pregunta de negocio → auditoría de datos → limpieza → modelado → evaluación → interpretación → documentación → entrega como dashboard o API → automatización
 ```
 
-El objetivo no es acumular notebooks. El objetivo es demostrar capacidad para entregar soluciones de datos completas y verificables.
+El objetivo no es acumular notebooks. El objetivo es demostrar capacidad para entregar soluciones de datos completas, verificables y automatizadas.
