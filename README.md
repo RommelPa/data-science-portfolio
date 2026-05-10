@@ -4,12 +4,12 @@
 
 This repository is the central hub for my data science portfolio.
 
-The portfolio demonstrates reproducible data analysis, machine learning, business reporting, dashboard development, model serving, containerized API delivery, and continuous integration.
+The portfolio demonstrates reproducible data analysis, machine learning, business reporting, dashboard development, model serving, containerized API delivery, cloud dashboard deployment, and continuous integration.
 
 The goal is not to show isolated notebooks. The goal is to show the full data-product workflow:
 
 ```text
-business question → data audit → preprocessing → modeling → evaluation → interpretation → reporting → dashboard/API delivery → automation
+business question → data audit → preprocessing → modeling → evaluation → interpretation → reporting → dashboard/API delivery → deployment/automation
 ```
 
 ---
@@ -27,6 +27,7 @@ My portfolio covers:
 - natural language processing,
 - executive dashboard development,
 - machine learning APIs,
+- Streamlit Community Cloud deployment,
 - Docker-based service packaging,
 - GitHub Actions CI,
 - Git/GitHub version control,
@@ -36,15 +37,15 @@ My portfolio covers:
 
 ## Portfolio Projects
 
-| # | Project | Area | Main Deliverable | Repository |
-|---:|---|---|---|---|
-| 1 | Retail Sales EDA | Exploratory Data Analysis | Business-oriented retail sales analysis | [GitHub](https://github.com/RommelPa/retail-sales-eda) |
-| 2 | House Prices Regression | Regression | Reproducible house price prediction workflow | [GitHub](https://github.com/RommelPa/house-prices-regression) |
-| 3 | Customer Churn Classification | Classification | Churn prediction model with threshold analysis | [GitHub](https://github.com/RommelPa/customer-churn-classification) |
-| 4 | Sales Forecasting Time Series | Forecasting | Daily sales forecasting with chronological validation | [GitHub](https://github.com/RommelPa/sales-forecasting-time-series) |
-| 5 | Sentiment Analysis NLP | Natural Language Processing | IMDB sentiment classifier with TF-IDF and error analysis | [GitHub](https://github.com/RommelPa/sentiment-analysis-nlp) |
-| 6 | Retail Executive Dashboard | Business Intelligence / Data App | Streamlit BI-style executive dashboard | [GitHub](https://github.com/RommelPa/retail-executive-dashboard) |
-| 7 | Customer Churn Prediction API | ML Engineering / API | FastAPI churn prediction service with Docker and CI | [GitHub](https://github.com/RommelPa/customer-churn-prediction-api) |
+| # | Project | Area | Main Deliverable | Repository | Demo |
+|---:|---|---|---|---|---|
+| 1 | Retail Sales EDA | Exploratory Data Analysis | Business-oriented retail sales analysis | [GitHub](https://github.com/RommelPa/retail-sales-eda) | — |
+| 2 | House Prices Regression | Regression | Reproducible house price prediction workflow | [GitHub](https://github.com/RommelPa/house-prices-regression) | — |
+| 3 | Customer Churn Classification | Classification | Churn prediction model with threshold analysis | [GitHub](https://github.com/RommelPa/customer-churn-classification) | — |
+| 4 | Sales Forecasting Time Series | Forecasting | Daily sales forecasting with chronological validation | [GitHub](https://github.com/RommelPa/sales-forecasting-time-series) | — |
+| 5 | Sentiment Analysis NLP | Natural Language Processing | IMDB sentiment classifier with TF-IDF and error analysis | [GitHub](https://github.com/RommelPa/sentiment-analysis-nlp) | — |
+| 6 | Retail Executive Dashboard | Business Intelligence / Data App | Deployed Streamlit BI-style executive dashboard | [GitHub](https://github.com/RommelPa/retail-executive-dashboard) | [Live demo](https://retail-executive-dashboard-8xbvujcjstgigvpkheppaj.streamlit.app/) |
+| 7 | Customer Churn Prediction API | ML Engineering / API | FastAPI churn prediction service with Docker and CI | [GitHub](https://github.com/RommelPa/customer-churn-prediction-api) | — |
 
 ---
 
@@ -90,13 +91,18 @@ Python, FastAPI, Pydantic, scikit-learn, pandas, joblib, pytest, Uvicorn, Docker
 
 **Repository:** [retail-executive-dashboard](https://github.com/RommelPa/retail-executive-dashboard)
 
-This project builds a BI-style executive dashboard with Streamlit.
+**Live demo:** [Streamlit app](https://retail-executive-dashboard-8xbvujcjstgigvpkheppaj.streamlit.app/)
+
+This project builds a deployed BI-style executive dashboard with Streamlit.
 
 It includes:
 
 - raw retail data loading,
 - dashboard-ready data preparation,
 - KPI reconciliation checks,
+- public demo data layer,
+- automatic data fallback from full local data to public demo data,
+- Streamlit Community Cloud deployment,
 - executive KPI cards,
 - country filters,
 - operational stock-code filtering,
@@ -107,18 +113,18 @@ It includes:
 - detailed tables,
 - BI-style light theme,
 - MIT license,
-- version tag `v1.0.0`.
+- version tags `v1.0.0` and `v1.1.0`.
 
 **Why it matters**
 
 This project demonstrates the ability to transform transactional data into an executive-facing product.
 
-It is not just exploratory analysis. It is a decision-support interface.
+It is not just exploratory analysis. It is a deployed decision-support interface.
 
 **Main technologies**
 
 ```text
-Python, pandas, Streamlit, Plotly, Git, GitHub
+Python, pandas, Streamlit, Plotly, Streamlit Community Cloud, Git, GitHub
 ```
 
 ---
@@ -239,6 +245,7 @@ This project is the foundation for later retail business analytics and dashboard
 | Forecasting | Sales Forecasting Time Series |
 | Natural Language Processing | Sentiment Analysis NLP |
 | Dashboard Development | Retail Executive Dashboard |
+| Dashboard Deployment | Retail Executive Dashboard |
 | API Development | Customer Churn Prediction API |
 | Model Serving | Customer Churn Prediction API |
 | Docker | Customer Churn Prediction API |
@@ -278,6 +285,7 @@ joblib
 matplotlib
 Plotly
 Streamlit
+Streamlit Community Cloud
 ```
 
 ### API and Engineering
@@ -304,7 +312,7 @@ If you are reviewing this portfolio, use this order:
    Best technical project. Shows model serving, validation, tests, Docker, and CI.
 
 2. **Retail Executive Dashboard**  
-   Best visual/business-facing project. Shows dashboard design and executive reporting.
+   Best visual/business-facing project. Shows dashboard design, public deployment, and executive reporting.
 
 3. **Sales Forecasting Time Series**  
    Best time-aware modeling project. Shows chronological validation and forecasting discipline.
@@ -327,12 +335,12 @@ If you are reviewing this portfolio, use this order:
 
 This portfolio is designed to show progression.
 
-It starts with exploratory analysis and supervised modeling. It then moves into forecasting and NLP. It continues with an executive dashboard and finishes with an API that serves a trained model through FastAPI, Docker, tests, and CI.
+It starts with exploratory analysis and supervised modeling. It then moves into forecasting and NLP. It continues with a deployed executive dashboard and finishes with an API that serves a trained model through FastAPI, Docker, tests, and CI.
 
 The key message is:
 
 ```text
-I can analyze data, build models, explain results, create decision-support dashboards, and serve machine learning predictions through tested, containerized, CI-validated APIs.
+I can analyze data, build models, explain results, create deployed decision-support dashboards, and serve machine learning predictions through tested, containerized, CI-validated APIs.
 ```
 
 ---
@@ -346,23 +354,22 @@ I can analyze data, build models, explain results, create decision-support dashb
 | Customer Churn Classification | Complete, tagged `v1.0.0` |
 | Sales Forecasting Time Series | Complete, tagged `v1.0.0` |
 | Sentiment Analysis NLP | Complete, tagged `v1.0.0` |
-| Retail Executive Dashboard | Complete, tagged `v1.0.0` |
+| Retail Executive Dashboard | Complete, deployed publicly, tagged `v1.1.0` |
 | Customer Churn Prediction API | Complete, tagged `v1.2.0` |
 
 ---
 
 ## Next Improvements
 
-The portfolio is already broad enough. The next improvements should focus on polish, deployment, and automation rather than adding more notebooks.
+The portfolio is already broad enough. The next improvements should focus on deeper deployment, automation, and portfolio presentation rather than adding more notebooks.
 
 Recommended next steps:
 
-1. Deploy the Retail Executive Dashboard.
-2. Deploy the Customer Churn Prediction API.
-3. Add Docker image publishing workflow for the API.
-4. Add screenshots or demo GIFs to this hub.
-5. Add direct demo links when deployments are available.
-6. Add a short professional profile section to LinkedIn using this portfolio narrative.
+1. Deploy the Customer Churn Prediction API.
+2. Add Docker image publishing workflow for the API.
+3. Add screenshots or demo GIFs to this hub.
+4. Add more direct demo links when deployments are available.
+5. Add a short professional profile section to LinkedIn using this portfolio narrative.
 
 ---
 
@@ -370,7 +377,7 @@ Recommended next steps:
 
 Este repositorio centraliza mi portafolio de ciencia de datos.
 
-El portafolio demuestra proyectos reproducibles de análisis exploratorio, regresión, clasificación, forecasting, NLP, dashboard ejecutivo, API de machine learning, Docker y CI con GitHub Actions.
+El portafolio demuestra proyectos reproducibles de análisis exploratorio, regresión, clasificación, forecasting, NLP, dashboard ejecutivo desplegado, API de machine learning, Docker y CI con GitHub Actions.
 
 La narrativa principal es:
 
@@ -381,7 +388,7 @@ Construyo soluciones de datos reproducibles: desde análisis y modelado hasta da
 Los proyectos muestran el flujo completo de trabajo:
 
 ```text
-pregunta de negocio → auditoría de datos → limpieza → modelado → evaluación → interpretación → documentación → entrega como dashboard o API → automatización
+pregunta de negocio → auditoría de datos → limpieza → modelado → evaluación → interpretación → documentación → entrega como dashboard o API → despliegue/automatización
 ```
 
-El objetivo no es acumular notebooks. El objetivo es demostrar capacidad para entregar soluciones de datos completas, verificables y automatizadas.
+El objetivo no es acumular notebooks. El objetivo es demostrar capacidad para entregar soluciones de datos completas, verificables, desplegadas y automatizadas.
